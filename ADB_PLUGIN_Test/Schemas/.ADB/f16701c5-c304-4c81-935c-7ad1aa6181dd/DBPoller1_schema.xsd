@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns:tns="http://www.tibco.com/xmlns/adb/f16701c5-c304-4c81-935c-7ad1aa6181ddddda2363-4e42-467a-b080-6eb156e552ea_schema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.tibco.com/xmlns/adb/f16701c5-c304-4c81-935c-7ad1aa6181ddddda2363-4e42-467a-b080-6eb156e552ea_schema" xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="P__BRADWEI__TEST1" type="tns:P__BRADWEI__TEST1_Type"/>
+    <complexType name="ADB_SEQUENCE_BRADWEI_TEST1_LN_Type">
+        <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="item" type="tns:BRADWEI_TEST1_LN"/>
+        </sequence>
+    </complexType>
+    <complexType name="BRADWEI_TEST1_LN">
+        <all>
+            <element minOccurs="0" name="NCMP" nillable="true" type="string"/>
+            <element minOccurs="0" name="VBELN" nillable="true" type="string"/>
+            <element minOccurs="0" name="REMARK" nillable="true" type="string"/>
+            <element minOccurs="0" name="LINENO" nillable="true" type="string"/>
+            <element minOccurs="0" name="ADB__OPCODE" nillable="true" type="int"/>
+        </all>
+    </complexType>
+    <complexType name="P__BRADWEI__TEST1_Type">
+        <all>
+            <element minOccurs="0" name="NCMP" nillable="true" type="string"/>
+            <element minOccurs="0" name="VBELN" nillable="true" type="string"/>
+            <element minOccurs="0" name="ZHAWB" nillable="true" type="string"/>
+            <element minOccurs="0" name="ZFRWR" nillable="true" type="string"/>
+            <element minOccurs="0" name="ZSHIPID" nillable="true" type="string"/>
+            <element minOccurs="0" name="ZTGWT" nillable="true" type="double"/>
+            <element minOccurs="0" name="ZGEWEI" nillable="true" type="string"/>
+            <element minOccurs="0" name="CRTDATE" nillable="true" type="string"/>
+            <element minOccurs="0" name="ADB__OPCODE" nillable="true" type="int"/>
+            <element minOccurs="0" name="ADB__SEQUENCE" nillable="true" type="string"/>
+            <element minOccurs="0" name="ADB__TIMESTAMP" nillable="true" type="string"/>
+            <element minOccurs="0" name="ADB__REF__OBJECT" nillable="true" type="string"/>
+            <element minOccurs="0" name="ADB__SEQUENCE__BRADWEI__TEST1__LN" nillable="true" type="tns:ADB_SEQUENCE_BRADWEI_TEST1_LN_Type"/>
+        </all>
+    </complexType>
+</schema>

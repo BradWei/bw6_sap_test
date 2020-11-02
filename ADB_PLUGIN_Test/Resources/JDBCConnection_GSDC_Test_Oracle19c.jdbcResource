@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_aOZckZTPEeqiKJ1C0oc6hg" name="JDBCConnection_GSDC_Test_Oracle19c" type="jdbc:JdbcDataSource">
+  <jndi:reference xmi:id="_aOlCwJTPEeqiKJ1C0oc6hg" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
+  <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_aOlCwZTPEeqiKJ1C0oc6hg" username="gsdctrain" password="#!APdTpPEMTMtrL+vILxl7qE7lDzTiChq4eViI2ptjfD8=">
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_aOlCwpTPEeqiKJ1C0oc6hg" jdbcDriver="tibcosoftwareinc.jdbc.oracle.OracleDriver" dbURL="jdbc:tibcosoftwareinc:oracle://10.41.21.42:1521;ServiceName=RF"/>
+  </jndi:configuration>
+</jndi:namedResource>

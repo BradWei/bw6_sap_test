@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adbplugin="http://ns.tibco.com/bw/sharedresource/adbplugin" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_XEnqIJV9EeqP5YU2Y6L36g" name="ADB_GSDCTEST_SUB" type="adbplugin:ADBPluginConnection">
+  <jndi:reference xmi:id="_XEnqIZV9EeqP5YU2Y6L36g" key="jdbcconncetion" type="jdbc:JdbcDataSource" value="JDBCConnection_GSDC_Test_Oracle19c"/>
+  <jndi:configuration xsi:type="adbplugin:ADBPluginConnection" xmi:id="_XEnqIpV9EeqP5YU2Y6L36g" uuid="f2576976-be8e-4923-8b00-a5d2a7d06a2e">
+    <eventPoller xmi:id="_XEnqI5V9EeqP5YU2Y6L36g" name="DBPoller" allowKeys="false" dummyNode="true"/>
+    <dbMerger xmi:id="_XEnqJJV9EeqP5YU2Y6L36g" name="DBMerger" dummyNode="true"/>
+    <dbMerger xmi:id="_xqvNIJV9EeqP5YU2Y6L36g" name="DBMerger1_BRADWEI_TEST" uuid="28864efd-95b1-47e1-ba3f-52554643925b" exceptionTableName="EXCP_BRADWEI_TEST_HD" opaqueExceptionTableName="">
+      <table xmi:id="_nBrQYBdpEeulNuNnziU1Jg" name="BRADWEI_TEST_HD">
+        <tableConfiguration xmi:id="_nBrQYRdpEeulNuNnziU1Jg" name="BRADWEI_TEST_HD">
+          <rows xmi:id="_nBrQYhdpEeulNuNnziU1Jg" name="NCMP" type="string" tableName="BRADWEI_TEST_HD" use="true" dbType="VARCHAR2"/>
+          <rows xmi:id="_nBrQYxdpEeulNuNnziU1Jg" name="VBELN" type="string" userKey="true" tableName="BRADWEI_TEST_HD" use="true" dbType="VARCHAR2" primaryKey="true"/>
+          <rows xmi:id="_nBrQZBdpEeulNuNnziU1Jg" name="ZHAWB" type="string" tableName="BRADWEI_TEST_HD" use="true" dbType="VARCHAR2"/>
+          <rows xmi:id="_nBrQZRdpEeulNuNnziU1Jg" name="ZFRWR" type="string" tableName="BRADWEI_TEST_HD" use="true" dbType="VARCHAR2"/>
+          <rows xmi:id="_nBrQZhdpEeulNuNnziU1Jg" name="ZSHIPID" type="string" tableName="BRADWEI_TEST_HD" use="true" dbType="VARCHAR2"/>
+          <rows xmi:id="_nBrQZxdpEeulNuNnziU1Jg" name="ZTGWT" type="double" tableName="BRADWEI_TEST_HD" use="true" dbType="NUMBER"/>
+          <rows xmi:id="_nBrQaBdpEeulNuNnziU1Jg" name="ZGEWEI" type="string" tableName="BRADWEI_TEST_HD" use="true" dbType="VARCHAR2"/>
+          <rows xmi:id="_nBrQaRdpEeulNuNnziU1Jg" name="CRTDATE" type="string" tableName="BRADWEI_TEST_HD" use="true" dbType="DATE"/>
+          <child xmi:id="_tG2e4BdpEeulNuNnziU1Jg" name="BRADWEI_TEST_LN">
+            <rows xmi:id="_tG3F8BdpEeulNuNnziU1Jg" name="NCMP" type="string" tableName="BRADWEI_TEST_LN" use="true" dbType="VARCHAR2" childTable="true"/>
+            <rows xmi:id="_tG3F8RdpEeulNuNnziU1Jg" name="VBELN" type="string" joinTo="BRADWEI_TEST_HD.VBELN" userKey="true" tableName="BRADWEI_TEST_LN" use="true" dbType="VARCHAR2" childTable="true" primaryKey="true"/>
+            <rows xmi:id="_tG3F8hdpEeulNuNnziU1Jg" name="REMARK" type="string" tableName="BRADWEI_TEST_LN" use="true" dbType="VARCHAR2" childTable="true"/>
+            <rows xmi:id="_tG3F8xdpEeulNuNnziU1Jg" name="LINENO" type="string" userKey="true" tableName="BRADWEI_TEST_LN" use="true" dbType="VARCHAR2" childTable="true" primaryKey="true"/>
+          </child>
+        </tableConfiguration>
+      </table>
+    </dbMerger>
+    <dbRequester xmi:id="_XEnqJZV9EeqP5YU2Y6L36g" dummyNode="true" name="DBRequester"/>
+    <dbRequester xmi:id="_8t4eEBgtEeukuONEH7WAcA" name="DBRequester1" uuid="5dfdaf23-9ef2-4adc-9204-4da4c31e352e"/>
+  </jndi:configuration>
+</jndi:namedResource>

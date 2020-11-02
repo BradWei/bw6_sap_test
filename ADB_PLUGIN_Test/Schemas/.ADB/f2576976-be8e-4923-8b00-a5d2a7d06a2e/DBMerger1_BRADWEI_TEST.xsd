@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns:sub="http://www.tibco.com/xmlns/adb/f2576976-be8e-4923-8b00-a5d2a7d06a2e28864efd-95b1-47e1-ba3f-52554643925b_schema" xmlns:tns="http://www.tibco.com/xmlns/adb/f2576976-be8e-4923-8b00-a5d2a7d06a2e28864efd-95b1-47e1-ba3f-52554643925b" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.tibco.com/xmlns/adb/f2576976-be8e-4923-8b00-a5d2a7d06a2e28864efd-95b1-47e1-ba3f-52554643925b" xmlns="http://www.w3.org/2001/XMLSchema">
+    <import namespace="http://www.tibco.com/xmlns/adb/f2576976-be8e-4923-8b00-a5d2a7d06a2e28864efd-95b1-47e1-ba3f-52554643925b_schema" schemaLocation="DBMerger1_BRADWEI_TEST_schema.xsd"/>
+    <element name="ActivityInput" type="tns:ActivityInput_Type"/>
+    <complexType name="ActivityInput_Type">
+        <sequence>
+            <element minOccurs="0" name="body" type="tns:body_Type"/>
+        </sequence>
+    </complexType>
+    <complexType name="body_Type">
+        <choice>
+            <element maxOccurs="unbounded" minOccurs="0" name="BRADWEI__TEST__HD" type="sub:BRADWEI__TEST__HD_Type"/>
+        </choice>
+    </complexType>
+    <element name="ActivityOutput" type="tns:ActivityOutput_Type"/>
+    <complexType name="ActivityOutput_Type">
+        <sequence>
+            <element minOccurs="0" name="body" type="tns:body_Output_Type"/>
+        </sequence>
+    </complexType>
+    <complexType name="body_Output_Type">
+        <choice>
+            <element maxOccurs="unbounded" minOccurs="0" name="BRADWEI__TEST__HD" type="sub:BRADWEI__TEST__HD_Output_Type"/>
+        </choice>
+    </complexType>
+</schema>

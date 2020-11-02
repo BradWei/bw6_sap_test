@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns:sub="http://www.tibco.com/xmlns/adb/f16701c5-c304-4c81-935c-7ad1aa6181ddddda2363-4e42-467a-b080-6eb156e552ea_schema" xmlns:tns="http://www.tibco.com/xmlns/adb/f16701c5-c304-4c81-935c-7ad1aa6181ddddda2363-4e42-467a-b080-6eb156e552ea" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.tibco.com/xmlns/adb/f16701c5-c304-4c81-935c-7ad1aa6181ddddda2363-4e42-467a-b080-6eb156e552ea" xmlns="http://www.w3.org/2001/XMLSchema">
+    <import namespace="http://www.tibco.com/xmlns/adb/f16701c5-c304-4c81-935c-7ad1aa6181ddddda2363-4e42-467a-b080-6eb156e552ea_schema" schemaLocation="DBPoller1_schema.xsd"/>
+    <element name="ActivityOutput" type="tns:ActivityOutput_Type"/>
+    <complexType name="ActivityOutput_Type">
+        <sequence>
+            <element minOccurs="0" name="body" type="tns:body_Type"/>
+        </sequence>
+    </complexType>
+    <complexType name="body_Type">
+        <choice>
+            <element maxOccurs="unbounded" minOccurs="0" name="P__BRADWEI__TEST1" type="sub:P__BRADWEI__TEST1_Type"/>
+        </choice>
+    </complexType>
+</schema>

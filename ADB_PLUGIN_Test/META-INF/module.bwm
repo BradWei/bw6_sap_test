@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:property="http://ns.tibco.com/bw/property" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_dYLv0GuBEeq4O4QovNb94A" targetNamespace="http://tns.tibco.com/bw/composite/ADB_PLUGIN_Test" name="ADB_PLUGIN_Test" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_dynpEGuBEeq4O4QovNb94A" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dytIoGuBEeq4O4QovNb94A" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dywL8GuBEeq4O4QovNb94A" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dyyoMGuBEeq4O4QovNb94A" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dy1EcGuBEeq4O4QovNb94A" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dy3gsGuBEeq4O4QovNb94A" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dy6kAGuBEeq4O4QovNb94A" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dy-1cGuBEeq4O4QovNb94A" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_dzDG4GuBEeq4O4QovNb94A" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_NbslIJTaEeqiKJ1C0oc6hg" name="JMSProviderURL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_9-kC4BdpEeulNuNnziU1Jg" name="ComponentProcess_DataMerger" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_9-kC4RdpEeulNuNnziU1Jg" processName="Process_DataMerger"/>
+  </sca:component>
+  <sca:component xmi:id="_KU4LEBjlEeuuj5c_o_rdxg" name="ComponentProcess_DataRequester" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_KU4LERjlEeuuj5c_o_rdxg" processName="Process_DataRequester"/>
+  </sca:component>
+</sca:composite>
