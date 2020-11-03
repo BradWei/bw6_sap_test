@@ -350,7 +350,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.1"/>
-                                    <layoutConstraint x="243"
+                                    <layoutConstraint x="278"
                                     xsi:type="notation:Bounds" y="41"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -434,10 +434,11 @@
             </bpws:from>
         </bpws:variable>
         <bpws:variable element="ns1:ActivityInput"
-            name="DataRequester-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns1:ActivityOutput" name="DataRequester" sca-bpel:internal="true"/>
+            name="DataRequester1-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns1:ActivityOutput"
+            name="DataRequester1" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:ActivityErrorData"
-            name="_error_DataRequester" sca-bpel:internal="true"/>
+            name="_error_DataRequester1" sca-bpel:internal="true"/>
         <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
@@ -485,8 +486,9 @@
             </bpws:extensionActivity>
             <bpws:extensionActivity>
                 <tibex:activityExtension
-                    inputVariable="DataRequester-input"
-                    name="DataRequester" outputVariable="DataRequester"
+                    inputVariable="DataRequester1-input"
+                    name="DataRequester1"
+                    outputVariable="DataRequester1"
                     tibex:xpdlId="e52452a8-6e31-4220-bfdf-42b4532f385e" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="TimerToDataRequester"/>
