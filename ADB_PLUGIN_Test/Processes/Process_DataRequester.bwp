@@ -434,11 +434,11 @@
             </bpws:from>
         </bpws:variable>
         <bpws:variable element="ns1:ActivityInput"
-            name="DataRequester2-input" sca-bpel:internal="true"/>
+            name="DataRequester3-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns1:ActivityOutput"
-            name="DataRequester2" sca-bpel:internal="true"/>
+            name="DataRequester3" sca-bpel:internal="true"/>
         <bpws:variable element="ns2:ActivityErrorData"
-            name="_error_DataRequester2" sca-bpel:internal="true"/>
+            name="_error_DataRequester3" sca-bpel:internal="true"/>
         <bpws:variable element="ns:ErrorReport" name="_error" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
@@ -486,9 +486,9 @@
             </bpws:extensionActivity>
             <bpws:extensionActivity>
                 <tibex:activityExtension
-                    inputVariable="DataRequester2-input"
-                    name="DataRequester2"
-                    outputVariable="DataRequester2"
+                    inputVariable="DataRequester3-input"
+                    name="DataRequester3"
+                    outputVariable="DataRequester3"
                     tibex:xpdlId="e52452a8-6e31-4220-bfdf-42b4532f385e" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                     <bpws:targets>
                         <bpws:target linkName="TimerToDataRequester"/>
